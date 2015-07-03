@@ -6,9 +6,12 @@ import "fmt"
 // a function that returns an int.
 func fibonacci() func() int {
 	a, b := 0, 1
-	//Only this is called. The rest is closed over.
-	//Quite ingenious. a will be switched to the next iteration of b
-	//and b will be the a + b and b is returned.
+	// Only this is called. The rest is closed over.
+	// Quite ingenious. a will be switched to the next iteration of b
+	// and b will be the a + b and b is returned.
+	// more readable =>
+	// a = b
+        // b = a + b
 	return func() int {
 		a, b = b, a+b
 		return b
