@@ -1,2 +1,2 @@
 # gotour
-Practice I'm saving from doing the Go Tour
+Practice I'm saving from doing the Go Tour. 
